@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-display: var(--font-gambarino);
-  --font-sans: var(--font-raleway);
+    --font-display: var(--font-gambarino);
+    --font-sans: var(--font-raleway);
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
