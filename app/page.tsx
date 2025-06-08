@@ -15,6 +15,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Bounded } from "@/components/Bounded";
 import FadeIn from "@/components/FadeIn";
 import RevealText from "@/components/RevealText";
+import FeaturedProduct from "@/components/FeaturedProduct";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -180,6 +181,8 @@ export default function Home() {
           </div>
         </div>
       </Bounded>
+
+      <FeaturedProduct />
     </>
   );
 }
