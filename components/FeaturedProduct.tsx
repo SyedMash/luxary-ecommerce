@@ -1,7 +1,9 @@
-import { Bounded } from "@/components/Bounded";
 import Image from "next/image";
-import Link from "next/link";
+
+//components
 import FadeIn from "@/components/FadeIn";
+import ButtonLink from "@/components/ButtonLink";
+import { Bounded } from "@/components/Bounded";
 
 const FeaturedProduct = () => {
   return (
@@ -12,10 +14,11 @@ const FeaturedProduct = () => {
         }
       >
         <FadeIn
-          className={"translate-y-16 lg:col-span-2 lg:row-span-2"}
+          className={"translate-y-16 opacity-0 lg:col-span-2 lg:row-span-2"}
           vars={{
             duration: 1,
           }}
+          start={"top 80%"}
         >
           <Image
             src={"/images/grid-picture.jpg"}
@@ -52,9 +55,13 @@ const FeaturedProduct = () => {
           />
           <div className={"flex justify-between p-10 pt-4"}>
             <div className={"space-y-1"}>
-              <h3>Ignis</h3>
+              <h3 className={"font-display text-4xl"}>Ignis</h3>
               <p className={"mt-2 text-gray-400"}>Eau de Parfum</p>
-              <p>button link</p>
+              <ButtonLink
+                href={"/product/ignis"}
+                content={"Buy Now"}
+                className={"mt-6"}
+              />
             </div>
             <p className={"mt-4 text-gray-100"} aria-label={"Product price"}>
               $11000
