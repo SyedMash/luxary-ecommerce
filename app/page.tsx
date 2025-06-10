@@ -5,7 +5,6 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
-
 // components
 import { Bounded } from "@/components/Bounded";
 import FadeIn from "@/components/FadeIn";
@@ -13,6 +12,7 @@ import RevealText from "@/components/RevealText";
 import FeaturedProduct from "@/components/FeaturedProduct";
 import ButtonLink from "@/components/ButtonLink";
 import ScrollText from "@/components/ScrollText";
+import FragranceList from "@/components/FragranceList";
 
 gsap.registerPlugin(useGSAP);
 
@@ -63,9 +63,9 @@ export default function Home() {
           </FadeIn>
         </div>
       </Bounded>
-
       <ScrollText />
       <FeaturedProduct />
+      <FragranceList />
     </>
   );
 }

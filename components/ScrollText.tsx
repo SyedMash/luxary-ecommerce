@@ -80,14 +80,12 @@ const ScrollText = () => {
       className={"flex h-screen items-center justify-center"}
     >
       <div className="glow-background absolute inset-0 z-0 h-full w-full opacity-0"></div>
-      <div className="absolute inset-0 bg-[url('/noisetexture.jpg')] opacity-30 mix-blend-multiply"></div>
 
       <div ref={contentRef}>
         <div className="mb-2 text-center text-sm tracking-wider text-neutral-200 uppercase md:mb-8 md:text-base">
           Define the luxury
         </div>
 
-        {/* Paragraph */}
         <div ref={textRef} className="text-center">
           <p className="font-display flex flex-wrap justify-center text-5xl leading-tight text-balance uppercase md:text-7xl">
             {words.map((word, index) => (
@@ -108,4 +106,5 @@ const ScrollText = () => {
     </Bounded>
   );
 };
+
 export default ScrollText;

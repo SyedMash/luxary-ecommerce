@@ -7,7 +7,7 @@ import { Bounded } from "@/components/Bounded";
 
 const FeaturedProduct = () => {
   return (
-    <Bounded className={"min-h-screen overflow-hidden py-16 md:py-24"}>
+    <Bounded className={"min-h-screen overflow-hidden bg-black py-16 md:py-24"}>
       <div
         className={
           "grid grid-cols-1 items-center gap-8 lg:grid-cols-3 lg:grid-rows-[auto,auto]"
