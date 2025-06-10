@@ -28,10 +28,9 @@ const FragranceList = () => {
           An expression of quiet luxury. Cote Royal is designed for the man who
           commands attention without seeking it.
         </p>
-
         <div className={"mt-12 grid grid-cols-1 gap-12"}>
           {products.map((product) => (
-            <FragranceDisplay key={product.id} />
+            <FragranceDisplay key={product.id} id={product.id} />
           ))}
         </div>
       </div>
