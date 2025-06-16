@@ -2,7 +2,6 @@ import Image from "next/image";
 
 //components
 import FadeIn from "@/components/FadeIn";
-import ButtonLink from "@/components/ButtonLink";
 import { Bounded } from "@/components/Bounded";
 import TransitionLink from "@/components/TransitionLink";
 
