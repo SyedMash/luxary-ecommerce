@@ -4,6 +4,7 @@ import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 import ButtonLink from "@/components/ButtonLink";
 import { Bounded } from "@/components/Bounded";
+import TransitionLink from "@/components/TransitionLink";
 
 const FeaturedProduct = () => {
   return (
@@ -57,11 +58,9 @@ const FeaturedProduct = () => {
             <div className={"space-y-1"}>
               <h3 className={"font-display text-4xl"}>Ignis</h3>
               <p className={"mt-2 text-gray-400"}>Eau de Parfum</p>
-              <ButtonLink
-                href={"/product/ignis"}
-                content={"Buy Now"}
-                className={"mt-6"}
-              />
+              <TransitionLink href={"/product/ignis"} className={"mt-6"}>
+                Buy Now
+              </TransitionLink>
             </div>
             <p className={"mt-4 text-gray-100"} aria-label={"Product price"}>
               $11000

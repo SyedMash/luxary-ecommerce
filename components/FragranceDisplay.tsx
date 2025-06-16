@@ -7,6 +7,7 @@ import { products } from "@/constants";
 // components
 import ButtonLink from "@/components/ButtonLink";
 import FadeIn from "@/components/FadeIn";
+import TransitionLink from "@/components/TransitionLink";
 
 interface FragranceDisplayProps {
   id: number;
@@ -41,7 +42,7 @@ const FragranceDisplay = ({ id }: FragranceDisplayProps) => {
         <p className={"mb-10 max-w-md text-lg text-gray-300"}>{description}</p>
 
         <div className={"flex flex-wrap gap-4"}>
-          <ButtonLink href={`/product/${name}`} content={"Discover"} />
+          <TransitionLink href={`/product/${name}`}>Discover</TransitionLink>
           <ButtonLink href={`/`} content={"Add To Bag"} />
         </div>
       </FadeIn>
